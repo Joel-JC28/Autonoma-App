@@ -59,7 +59,7 @@ export const globalStyles = StyleSheet.create({
         elevation: 5,
     },
 });
-    export const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
     button: {
         backgroundColor: colors.primary,
         padding: 20,
@@ -78,7 +78,14 @@ export const globalStyles = StyleSheet.create({
         borderRadius: 17,
         padding: 20,
         marginVertical: 9,
-        
+
+    },
+    TextResult: {
+        marginTop: spacing.lg,
+        fontSize: fontSize.large,
+        fontWeight: 'bold',
+        color: colors.primary,
+        textAlign: 'center',
     },
 
 });

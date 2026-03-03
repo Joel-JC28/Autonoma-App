@@ -18,13 +18,13 @@ export const FormularioScreens = () => {
             setResultado("INDETERMINACIÓN");
             return;
         }
-        
+
         if (num2 === 0) {
             setResultado("NO EXISTE DIVISIÓN PARA CERO");
             return;
         }
 
-        setResultado("Resultado: ${num1 / num2}");
+       setResultado(`EL RESULTADO ES: ${num1 / num2}`);
     };
 
     return (
@@ -50,14 +50,7 @@ export const FormularioScreens = () => {
 
                 {resultado !== '' && (
                     <Text
-                        style={{
-                            marginTop: spacing.lg,
-                            fontSize: fontSize.large,
-                            fontWeight: 'bold',
-                            color: colors.primary,
-                            textAlign: 'center',
-                        }}
-                    >
+                        style={styles.TextResult}>
                         {resultado}
                     </Text>
                 )}
